@@ -1,213 +1,299 @@
 * {
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 body {
-    background-color: #f9f9f9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* header */
+
+.logo {
+    width: 10%;
+}
+
+img {
+    width: 30%;
+    border-radius: 12px;
 }
 
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: rgb(233, 233, 233);
+    margin-bottom: 40px;
 }
 
-.logo img {
-    height: 50px;
-}
-
-nav ul {
-    list-style: none;
+nav {
     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
 }
 
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #333;
+    font-size: 14px;
+    color: black;
+    padding: 12px;
 }
 
-nav ul li a.highlight {
-    background-color: #d2e431;
-    color: white;
-    padding: 10px 15px;
+nav a:hover {
+    background-color: green;
     border-radius: 20px;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    background-color: white;
-}
-
-.hero-text {
-    max-width: 50%;
-}
-
-.hero-text h1 {
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.hero-text button {
-    background-color: #077F5B;
     color: white;
-    padding: 15px 30px;
+}
+
+.btn-revista {
+    background-color: greenyellow;
+    padding: 12px;
+    border-radius: 20px;
     border: none;
-    border-radius: 20px;
-    font-size: 1rem;
+    color: white;
     cursor: pointer;
 }
 
-.hero-image img {
-    max-width: 100%;
-    border-radius: 10px;
-}
+/* banner */
 
-.niagara-section {
-    background-color: #077F5B;
-    padding: 40px;
-    color: white;
+main {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
     align-items: center;
 }
 
-.niagara-image {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.niagara-image img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.niagara-text {
-    max-width: 100%;
-}
-
-.niagara-text h3 {
-    font-size: 24px;
-    margin-bottom: 15px;
-}
-
-.niagara-text p {
-    font-size: 18px;
-    margin: 15px 0;
-    font-style: italic;
-}
-
-.uteista-section {
-    padding: 40px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.uteista-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.uteista-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.uteista-box {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.uteista-box svg {
-    display: block;
-    margin: 0 auto 15px;
-}
-
-.empleo-section {
-    padding: 40px;
-    background-color: #f0f0f0;
-    text-align: center;
-}
-
-.empleo-section h2 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-}
-
-.empleo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    justify-items: center;
-}
-
-.empleo-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.empleado-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-}
-
-.skills {
+.banner {
+    width: 500px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.uteista {
+    background-color: #117f6c;
+    padding: 12px;
+    width: 22%;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* generacion */
+
+.generation {
+    padding: 5rem 8rem;
+}
+
+.generation h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.cards-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: rgb(233, 233, 233);
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 20%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #117f6c;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover:before {
+    opacity: 0.1;
+}
+
+.icon {
+    font-size: 2rem;
+    color: #117f6c;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.card h3 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* convenios */
+
+.convenios {
+    background-color: #117f6c;
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+}
+
+.convenios-container {
+    position: relative;
+}
+
+.convenios-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.convenios-contenido {
+    padding: 15px;
+}
+
+.convenios h3 {
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.skills span {
+.convenios p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.autor {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* bolsa */
+
+.bolsa {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.h1 {
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: start;
+}
+
+.container-icons {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-size: 14px;
+    margin: 5px 0;
     display: flex;
     align-items: center;
-    margin: 5px;
+    gap: 8px;
 }
 
-.skills svg {
-    margin-right: 5px;
+li img {
+    width: 20px;
+    height: 20px;
 }
 
-button {
-    background-color: #006837;
-    color: white;
-    padding: 10px 20px;
+.container-price {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+.btn-contratar {
+    background-color: #117f6c;
+    color: #fff;
     border: none;
+    padding: 8px 16px;
     border-radius: 20px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.footer {
-    background-color: #006837; 
-    color: white; 
-    text-align: center; 
-    padding: 20px; 
-    position: relative; 
-    bottom: 0; 
-    width: 100%; 
-    border-radius: 20px;
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #117f6c;
+    color: #fff;
+    border-radius: 10px;
+    width: 80%;
 }

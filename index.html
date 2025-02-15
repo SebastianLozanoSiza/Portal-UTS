@@ -2,144 +2,326 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>UTS PORTAL WEB</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Uteista</title>
 </head>
 
 <body>
-    <header>
-        <!-- Logo -->
-        <img src="img/LogoUTS.jpg" alt="Logo Uts" class="logo">
+    <!-- Top Bar -->
+    <div id="main-header" class="main-header">
 
-        <nav>
-            <!-- NavBar Menu Options -->
-            <a href="#">Inicio</a>
-            <a href="#">Estudiantes</a>
-            <a href="#">Docentes</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Investigación</a>
-            <a href="#">Plan de estudios</a>
-        </nav>
+        <!-- section Nav Bar -->
+        <section class="navbar-uts">
 
-        <!-- Button Magazine -->
-        <button class="btn-revista">Revista</button>
-    </header>
+            <!-- Logo -->
+            <img src="img/Logo-UTS-1.png" class="logo" alt="Logo" />
 
-    <main>
-        <section class="banner">
-            <h1>Construimos los futuros <br>líderes del pais</h1>
-            <p>Las Unidades Tecnologicas de Santander se dedica a la formación de personas con sentido ético,
-                pensamiento crítico y actitud emprendedora.</p>
-            <a class="uteista" href="#">SOY UTEISTA</a>
+            <!-- Nav  Bar -->
+            <nav class="navbar-general">
+                <!-- Links -->
+                <a href="index.html">Inicio</a>
+                <a href="#">Estudiantes</a>
+                <a href="#">Docentes</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Investigacion</a>
+                <a href="#">Plan de Estudios</a>
+            </nav>
+
+            <button class="btn-academic bg-verde">Revista</button>
         </section>
-        <img src="img/banner.jpg" alt="">
-    </main>
+    </div>
 
-    <section class="generation">
-        <h2>Porque la generación uteista es especial</h2>
+    <div class="container">
+        <header>
+            <!-- Title -->
+            <div class="header-text-box">
+                <!-- Slogan -->
+                <h1>Construimos los futuros líderes del pais</h1>
 
-        <div class="cards-container">
-            <article class="card">
-                <span class="icon">⚗️</span>
-                <h3>Sentido Ético</h3>
-                <p>Cuentan con un comportamiento ético y empático con conciencia <br> de aportar y no afectar a <br>
-                    otras
-                    personas</p>
-            </article>
-
-            <article class="card">
-                <span class="icon">😊</span>
-                <h3>Pensamiento Crítico</h3>
-                <p>Tienen el deseo de <br> buscar, la paciencia para dudar, la afición de <br> meditar</p>
-            </article>
-
-            <article class="card">
-                <span class="icon">❤️</span>
-                <h3>Emprendimiento</h3>
-                <p>Con un espíritu inquieto, usando su creatividad y <br> viendo la oportunidad de ofrecer una solución
+                <!-- Banner Descripcion -->
+                <p class="header-text">
+                    Las Unidades Tecnológicas de Santander se dedica a la formación de
+                    personas con sentido ético, pensamiento crítico y actitud
+                    emprendedora.
                 </p>
-            </article>
-        </div>
-    </section>
-    <section class="convenios">
-        <div class="convenios-container">
-            <img src="img/Foto4.jpg" alt="Why Niagara College?" class="convenios-img">
-        </div>
-        <div class="convenios-contenido">
-            <h3>Convenios internacionales</h3>
-            <p><em>Intercambio de estudiantes de pregrado y posgrado, personal académico, investigador y administrativo.
-                    <br>
-                    Desarrollo de proyectos conjuntos de carácter académico cultural.</em></p>
-            <p class="autor">&mdash; Donald Trump</p>
-        </div>
-    </section>
 
-    <section class="bolsa">
-        <h1 class="h1">Bolsa de Empleo - Mejores estudiantes</h1>
-
-        <div class="container">
-            <!-- Tarjeta 1 -->
-            <div class="card">
-                <img src="img/Foto 2.jpg" alt="Kevin Mejia" class="profile-pic">
-                <h2 class="h2">Kevin Mejia</h2>
-                <div class="container-icons">
-                    <ul>
-                        <li><img src="img/iconos/node.svg" alt=""> Node JS</li>
-                        <li><img src="img/iconos/react.svg" alt=""> React JS</li>
-                        <li><img src="img/iconos/java.svg" alt=""> Java</li>
-                        <li><img src="img/iconos/vue.svg" alt=""> Vue</li>
-                    </ul>
-                </div>
-                <div class="container-price">
-                    <p class="price">$50/h</p>
-                    <button class="btn-contratar">CONTRATAR</button>
-                </div>
+                <!-- Boton Uteista -->
+                <a class="btn btn--big" href="#">Soy Uteista</a>
             </div>
 
-            <!-- Tarjeta 2 -->
-            <div class="card">
-                <img src="img/Foto 1.jpg" alt="Andres Felipe Galvis" class="profile-pic">
-                <h2 class="h2">Andres Felipe Galvis</h2>
-                <div class="container-icons">
-                    <ul>
-                        <li><img src="img/iconos/python.svg" alt="">Python</li>
-                        <li><img src="img/iconos/angular.svg" alt=""> Angular</li>
-                        <li><img src="img/iconos/sql.svg" alt=""> SQL</li>
-                        <li><img src="img/iconos/mongo.svg" alt=""> MongoDB</li>
-                    </ul>
-                </div>
-                <div class="container-price">
-                    <p class="price">$50/h</p>
-                    <button class="btn-contratar">CONTRATAR</button>
-                </div>
-            </div>
+            <!-- Banner Photo -->
+            <img src="img/chica-uteista.png" alt="Photo" />
+        </header>
 
-            <!-- Tarjeta 3 -->
-            <div class="card">
-                <img src="img/Foto3.jpg" alt="Nicolas Picon" class="profile-pic">
-                <h2 class="h2">Nicolas Picon</h2>
-                <div class="container-icons">
-                    <ul>
-                        <li><img src="img/iconos/english.svg" alt=""> Bilingüe English C1</li>
-                        <li><img src="img/iconos/react.svg" alt=""> React</li>
-                        <li><img src="img/iconos/laravel.svg" alt=""> Laravel</li>
-                        <li><img src="img/iconos/net.svg" alt=""> .NET</li>
-                    </ul>
-                </div>
-                <div class="container-price">
-                    <p class="price">$60/h</p>
-                    <button class="btn-contratar">CONTRATAR</button>
-                </div>
-            </div>
+        <h2>Bolsa de Empleo - Mejores estudiantes</h2>
+
+        <!-- selects ini -->
+        <div class="busqueda">
+            <form class="contenedor-selects">
+
+                <!-- Select Nombres estudiantes -->
+
+                <select class="form-select desplegable" id="nombre">
+                    <option value="">Seleccione Estudiante</option>
+                </select>
+
+
+                <!-- Select para seleccionar un lenguaje en  la tecnologia en que es experto el estudiante -->
+
+                <select class="form-select desplegable" id="experto">
+                    <option value="">Seleccione Experto Tecnologia</option>
+                    <option value="html">Html</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="node">Node Js</option>
+                    <option value="mongo">Mongo DB</option>
+                    <option value="php">Php</option>
+                    <option value="vue">Vue</option>
+                    <option value="asp">ASP.NET</option>
+                    <option value="java">Java</option>
+                </select>
+
+
+                <!-- Select sueldo -->
+
+                <select class="form-select desplegable" id="sueldo">
+                    <option value="">Sueldo en dolares/hora</option>
+                </select>
+
+
+                <!-- Select para seleccionar un valor del nivel en Ingles -->
+
+                <select class="form-select desplegable" id="nivelIngles">
+                    <option value="">Seleccione Nivel en Ingles</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="middle">Middle</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+
+            </form>
         </div>
-    </section>
+        <!-- selects fin -->
 
-    <div class="footer-container">
-        <footer>
-            <div class="footer-info">
-                Copyright &copy; Unidades Tecnologicas de Santander
+
+        <section class="bolsa">
+
+            <div class="grid-3-cols" id="tarjetas">
+
+                <figure class="student">
+                    <img src="img/Alex Pena.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Alex Pena</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>Java</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Advanced</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$60/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/Lina Montero.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Lina Montero</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>React</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Beginner</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$40/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/Susanita.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Susanita</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>NodeJs</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Advanced</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$60/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/Marlon.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Marlon</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>NextJs</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Beginner</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$20/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/Leidy Pabon.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Leidy Pabon</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>SpringBoot</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Middle</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$50/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/David.jpeg" alt="Student" />
+                    <div class="student-box">
+                        <h3>David</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>C#</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Advanced</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$60/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+
+                <figure class="student">
+                    <img src="img/noPhoto.jpg" alt="Student" />
+                    <div class="student-box">
+                        <h3>Jhon</h3>
+                        <ul class="student-details">
+                            <li>
+                                <span>JavaScript</span>
+                            </li>
+                            <br />
+                            <li>
+                                <strong>Advanced</strong>
+                            </li>
+                        </ul>
+                        <div class="student-price">
+                            <strong>$50/hora</strong>
+                            <a href="#" class="btn btn--small">Contratar</a>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section class="especial">
+            <h2>Porque la generación uteista es especial</h2>
+            <div class="grid-3-cols">
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                    </svg>
+                    <p class="features-title"><strong>Sentido Etico</strong></p>
+                    <p class="features-text">
+                        Cuentan con un comportamiento ético y empático con conciencia de
+                        aportar y no afectar a otras personas
+                    </p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="features-title">
+                        <strong>Pensamiento Critico</strong>
+                    </p>
+                    <p class="features-text">
+                        Tienen el deseo de buscar, la paciencia para dudar, la afición de
+                        meditar
+                    </p>
+                </div>
+
+                <div class="card">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="features-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                    <p class="features-title">
+                        <strong>Emprendimiento</strong>
+                    </p>
+                    <p class="features-text">
+                        Con un espíritu inquieto, usando su creatividad y viendo la
+                        oportunidad de ofrecer una solución
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bolsa-section">
+            <div>
+                <img class="niagara" src="img/Niagara.png" alt="Bolsa de empleo" />
+                <div class="bolsa-box">
+                    <h2>Convenios internacionales</h2>
+                    <blockquote class="bolsa-text">
+                        Intercambio de estudiantes de pregrado y posgrado, personal académico, investigador y
+                        administrativo. Desarrollo de proyectos conjuntos de carácter académico cultural.
+                    </blockquote>
+                    <p class="bolsa-author">&mdash; Donald Trump</p>
+                </div>
+            </div>
+        </section>
+
+
+        <footer id="pie-pagina" class="bg-verde text-white mt-5 p-5">
+            <div class="container">
+                <div class="col">
+                    <p class="text-center pie">
+                        Copyright &copy; Unidades Tecnologicas de Santander - 2025
+                    </p>
+                </div>
             </div>
         </footer>
     </div>
